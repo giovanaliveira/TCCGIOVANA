@@ -99,12 +99,12 @@ body {
 /* Menu Section Styles */
 .menu {
     display: flex;
-    padding: 64px 0;
+    padding: 100px 0;
 }
 
 .menu-content {
-    flex: 1;
-    padding: 20px;
+    flex: 5;
+    padding: 10px;
 }
 
 .menu-image {
@@ -167,3 +167,22 @@ body {
 
 .social-icon {
     text
+}
+
+h1 {
+    font-size: 40px; /* Define o tamanho da fonte como 40 pixels */
+    text-align: center; /* Centraliza o texto */
+}
+
+h2 {
+ 
+    font-size: 35px; /* Define o tamanho da fonte como 40 pixels */
+
+
+}
+
+p {
+
+    font-size: 20px;
+}
+
