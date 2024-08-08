@@ -1,0 +1,169 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--primary-color);
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-item {
+    text-decoration: none;
+    color: var(--secondary-color);
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    transition: color 0.3s;
+}
+
+.navbar-item:hover {
+    color: var(--link-hover-color);
+}
+
+.navbar-right {
+    display: flex;
+}
+
+/* Header Styles */
+.header {
+    position: relative;
+    max-width: 1600px;
+    min-width: 500px;
+}
+
+.header-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(80%);
+}
+
+.header-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--header-bg-color);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Content Styles */
+.content {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* About Section Styles */
+.about {
+    display: flex;
+    padding: 64px 0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* Menu Section Styles */
+.menu {
+    display: flex;
+    padding: 64px 0;
+}
+
+.menu-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.menu-image {
+    flex: 1;
+}
+
+.menu-img {
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.menu-img:hover {
+    transform: scale(1.05);
+}
+
+/* Contact Section Styles */
+.contact {
+    padding: 64px 0;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    display: none;
+    transition: background-color 0.3s;
+}
+
+.back-to-top:hover {
+    background-color: darkgreen;
+}
+
+/* Footer Styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icon {
+    text
