@@ -28,8 +28,8 @@ body {
 .navbar-item {
     text-decoration: none;
     color: var(--secondary-color);
-    letter-spacing: 2px;
-    padding: 10px 20px;
+    letter-spacing: 3px;
+    padding: 20px 20px;
     transition: color 0.3s;
 }
 
@@ -45,13 +45,15 @@ body {
 .header {
     position: relative;
     max-width: 1600px;
-    min-width: 500px;
+    min-width: 50px;
 }
 
 .header-image {
-    width: 100%;
+    width: 120%;
     height: auto;
-    filter: brightness(80%);
+    filter: brightness(50%);
+    
+    
 }
 
 .header-text {
@@ -60,7 +62,7 @@ body {
     left: 20px;
     color: var(--header-bg-color);
     padding: 30px;
-    background-color: rgba(252, 252, 252, 0.5);
+    background-color: rgba(129, 0, 0, 0);
 }
 
 /* Content Styles */
@@ -82,11 +84,11 @@ body {
 
 .about-text {
     flex: 3;
-    padding: 20px;
+    padding: 10px;
 }
 
 .about-img {
-    border-radius: 10px;
+    border-radius: 60px;
     width: 100%;
     height: auto;
     transition: transform 0.3s;
@@ -104,7 +106,7 @@ body {
 
 .menu-content {
     flex: 5;
-    padding: 10px;
+    padding: 90px;
 }
 
 .menu-image {
@@ -191,3 +193,48 @@ p {
     height: 250px; /* Define a altura da imagem como 200 pixels */
 }
 
+{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+}
+
+.search-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-left: 2px solid #ccc;
+}
+
+.search-button:hover {
+    background-color: #555;
+}
