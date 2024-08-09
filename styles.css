@@ -16,7 +16,7 @@ body {
 .navbar {
     background-color: var(--primary-color);
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(2, 1, 1, 0.2);
 }
 
 .navbar-content {
@@ -48,19 +48,23 @@ body {
 }
 
 .header-image {
-    width: 100%;
-    height: auto;
+    width: 100%; /* Aumenta a largura para 100% do contêiner pai */
+    height: 450px; /* Ajusta a altura automaticamente para manter a proporção */
     filter: brightness(50%);
+    
 }
 
 .header-text {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
+    bottom: 20px; /* Mantenha se quiser que fique a 20px do fundo */
+    left: 50%; /* Move o texto para o centro horizontalmente */
+    transform: translateX(-50%); /* Ajusta a posição para centralizar */
     color: var(--header-bg-color);
     padding: 30px;
-    background-color: rgba(129, 0, 0, 0);
+    background-color: rgba(241, 227, 227, 0);
+    text-align: center; /* Centraliza o texto dentro do contêiner */
 }
+
 
 /* Content Styles */
 .content {
@@ -145,7 +149,7 @@ body {
 }
 
 .back-to-top:hover {
-    background-color: darkgreen;
+    background-color: rgb(255, 255, 255);
 }
 
 /* Footer Styles */
@@ -168,8 +172,9 @@ body {
 
 /* Headings */
 h1 {
-    font-size: 40px; /* Define o tamanho da fonte */
+    font-size: 35px; /* Define o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
+    color: aliceblue;
 }
 
 h2 {
@@ -235,11 +240,11 @@ p {
     }
 
     h1 {
-        font-size: 32px;
+        font-size: 30px;
     }
 
     h2 {
-        font-size: 28px;
+        font-size: 20px;
     }
 
     p {
