@@ -44,16 +44,13 @@ body {
 /* Header Styles */
 .header {
     position: relative;
-    max-width: 1600px;
-    min-width: 50px;
+    max-width: 100%;
 }
 
 .header-image {
-    width: 120%;
+    width: 100%;
     height: auto;
     filter: brightness(50%);
-    
-    
 }
 
 .header-text {
@@ -75,6 +72,7 @@ body {
 /* About Section Styles */
 .about {
     display: flex;
+    flex-direction: column;
     padding: 64px 0;
 }
 
@@ -101,12 +99,13 @@ body {
 /* Menu Section Styles */
 .menu {
     display: flex;
+    flex-direction: column;
     padding: 5px 0;
 }
 
 .menu-content {
     flex: 5;
-    padding: 90px;
+    padding: 30px;
 }
 
 .menu-image {
@@ -167,74 +166,83 @@ body {
     margin-top: 10px;
 }
 
-.social-icon {
-    text
-}
-
+/* Headings */
 h1 {
-    font-size: 40px; /* Define o tamanho da fonte como 40 pixels */
+    font-size: 40px; /* Define o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
 }
 
 h2 {
- 
-    font-size: 35px; /* Define o tamanho da fonte como 40 pixels */
-
-
+    font-size: 35px;
 }
 
 p {
-
     font-size: 20px;
 }
 
-.menu-img {
-    width: 400px; /* Define a largura da imagem como 300 pixels */
-    height: 250px; /* Define a altura da imagem como 200 pixels */
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+    /* Ajustes para Tablets */
+    .about {
+        flex-direction: row;
+    }
+    .menu {
+        flex-direction: row;
+    }
+    .menu-content {
+        padding: 50px;
+    }
 }
 
-{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+@media (min-width: 1024px) {
+    /* Ajustes para Computadores */
+    .menu-content {
+        padding: 90px;
+    }
+    .menu-img {
+        width: 400px;
+        height: 250px;
+    }
 }
 
-.search-container {
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-}
+@media (max-width: 767px) {
+    /* Ajustes Específicos para Celulares */
+    .navbar-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-form {
-    display: flex;
-    border: 2px solid #ccc;
-    border-radius: 25px;
-    overflow: hidden;
-}
+    .header-text {
+        font-size: 18px;
+    }
 
-.search-input {
-    flex: 1;
-    padding: 10px;
-    font-size: 16px;
-    border: none;
-    outline: none;
-}
+    .content {
+        padding: 15px;
+    }
 
-.search-button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-left: 2px solid #ccc;
-}
+    .about {
+        flex-direction: column;
+        padding: 32px 0;
+    }
 
-.search-button:hover {
-    background-color: #555;
+    .menu-content {
+        padding: 20px;
+    }
+
+    .menu-img {
+        width: 100%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    p {
+        font-size: 18px;
+    }
 }
