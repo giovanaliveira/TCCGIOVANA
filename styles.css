@@ -16,7 +16,7 @@ body {
 .navbar {
     background-color: var(--primary-color);
     padding: 10px;
-    box-shadow: 0 2px 5px rgba(2, 1, 1, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .navbar-content {
@@ -61,7 +61,7 @@ body {
     transform: translateX(-50%); /* Ajusta a posição para centralizar */
     color: var(--header-bg-color);
     padding: 30px;
-    background-color: rgba(241, 227, 227, 0);
+    background-color: rgba(0, 0, 0, 0);
     text-align: center; /* Centraliza o texto dentro do contêiner */
 }
 
@@ -174,11 +174,16 @@ body {
 h1 {
     font-size: 35px; /* Define o tamanho da fonte */
     text-align: center; /* Centraliza o texto */
-    color: aliceblue;
+    color: rgb(156, 6, 6);
 }
 
 h2 {
     font-size: 35px;
+}
+
+h3 {
+color: #af0303;
+
 }
 
 p {
@@ -250,4 +255,54 @@ p {
     p {
         font-size: 18px;
     }
+}
+
+
+
+
+.search-container {
+    display: flex;
+    border: 2px solid #ccc;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#search-input {
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    width: 400px;
+    transition: width 0.4s ease;
+}
+
+#search-input:focus {
+    outline: none;
+    width: 350px;
+}
+
+#search-button {
+    background-color: #ffffff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#search-button:hover {
+    background-color: #d8d6d6;
+}
+
+/* Centralização */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
 }
