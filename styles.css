@@ -300,9 +300,53 @@ html, body {
     margin: 0;
 }
 
-.wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 10%;
-}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #990000;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #af0303;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #af0303;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #000000;
+  }
+  .aviso{
+    background-color: #af0303;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px; /* Tamanho da fonte alterado para 14px */
+  
+  }
+  
+  h2 {
+text-align: center;
+color: #af0303;
+  }
