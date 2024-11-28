@@ -181,6 +181,7 @@ h1 {
 
 h2 {
     font-size: 35px;
+    color: #990000;
 }
 
 h3 {
@@ -192,7 +193,7 @@ text-align: justify;
 p {
     font-size: 20px;
     text-align: justify;
-    
+    color: #990000;
 }
 
 /* Responsive Adjustments */
@@ -255,6 +256,7 @@ p {
 
     h2 {
         font-size: 20px;
+        color: #990000;
     }
 
     p {
@@ -418,7 +420,7 @@ color: #af0303;
   
   h2 {
     font-size: 1.5em; 
-    color: #ff0000; 
+    color: hsl(0, 0%, 0%); 
     opacity: 0.5; 
   }
   
